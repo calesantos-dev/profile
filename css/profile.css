@@ -897,3 +897,138 @@ footer {
     transition: none !important;
   }
 }
+
+/* Microsoft training, migrations and solutions */
+.microsoft-services {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 36px;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.microsoft-services .service p {
+  min-height: 0;
+}
+.microsoft-services .service small {
+  font-size: 11px;
+}
+.certification-heading {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.certification-heading h3 {
+  margin-top: 14px;
+  font-size: 24px;
+  line-height: 1.35;
+}
+.certification-heading p {
+  font-size: 13px;
+  margin: 0;
+}
+.certification-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 26px;
+}
+.certification {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+}
+.certification-top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.exam-code {
+  font:
+    11px ui-monospace,
+    monospace;
+  letter-spacing: 0.03em;
+  color: var(--accent);
+  border: 1px solid #3a4433;
+  border-radius: 4px;
+  padding: 5px 8px;
+}
+.certification h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: -0.02em;
+  margin: 20px 0 12px;
+}
+.certification p {
+  font-size: 13px;
+}
+.certification .certification-note {
+  font-size: 11px;
+  color: #c5c7bf;
+  border-left: 2px solid #5b6950;
+  padding-left: 10px;
+}
+.certification .text-link {
+  margin-top: auto;
+  padding-top: 8px;
+}
+.microsoft-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 32px;
+  padding: 28px;
+  background: #141813;
+  border: 1px solid #30382a;
+  border-radius: 8px;
+}
+.microsoft-cta p {
+  margin: 10px 0 0;
+  font-size: 13px;
+}
+.microsoft-cta .button {
+  flex-shrink: 0;
+}
+.certification-source {
+  font-size: 11px;
+  margin: 18px 0 0;
+}
+@media (max-width: 1000px) {
+  .microsoft-services {
+    grid-template-columns: 1fr;
+  }
+  .certification-heading {
+    gap: 24px;
+  }
+}
+@media (max-width: 700px) {
+  .certification-heading,
+  .certification-grid {
+    grid-template-columns: 1fr;
+  }
+  .certification-heading {
+    gap: 16px;
+    margin-top: 32px;
+  }
+  .certification {
+    padding: 20px;
+  }
+  .microsoft-cta {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 22px;
+  }
+  .microsoft-cta .button {
+    align-self: flex-start;
+  }
+}
