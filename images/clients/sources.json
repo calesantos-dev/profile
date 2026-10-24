@@ -1,0 +1,83 @@
+{
+  "reviewed": "2026-10-24",
+  "note": "Client relationships supplied by the portfolio owner. Public sources used only to identify the brands. Entries without a verified logo are rendered as plain text.",
+  "organizations": [
+    {
+      "name": "Império Ussole",
+      "logo": "imperio-ussole.webp",
+      "source": "https://agencia.ussole.tech/"
+    },
+    {
+      "name": "Lidesa"
+    },
+    {
+      "name": "Adventure",
+      "logo": "adventure.svg",
+      "dark": true,
+      "source": "https://adventure.ao/"
+    },
+    {
+      "name": "Factory Ideas",
+      "logo": "factory-ideas.png",
+      "dark": true,
+      "source": "https://www.factoryideas.ao/"
+    },
+    {
+      "name": "Honesus",
+      "logo": "honesus.svg",
+      "source": "https://honesus.com/"
+    },
+    {
+      "name": "Fairtex Angola",
+      "logo": "fairtex.png",
+      "source": "https://fairtexgroups.com/team.php"
+    },
+    {
+      "name": "Fayol Empreendimentos"
+    },
+    {
+      "name": "Pharol Logistics",
+      "logo": "pharol-logistics.png",
+      "source": "https://pharollogistics.com/"
+    },
+    {
+      "name": "Pescangola EP"
+    },
+    {
+      "name": "GlamX Group",
+      "logo": "glamx.jpg",
+      "source": "https://www.facebook.com/glamxgrouplda/"
+    },
+    {
+      "name": "Cálculo Perspicaz",
+      "logo": "calculo-perspicaz.jpg",
+      "source": "https://ao.linkedin.com/in/c%C3%A1lculo-perspicaz-4bb95715b"
+    },
+    {
+      "name": "YP Escritório de Advogados"
+    },
+    {
+      "name": "Tribunal de Contas",
+      "logo": "tribunal-contas.webp",
+      "dark": true,
+      "source": "https://tcontas.ao/"
+    },
+    {
+      "name": "Dinnotech"
+    },
+    {
+      "name": "Anda Lá",
+      "logo": "anda-la.webp",
+      "source": "https://play.google.com/store/apps/details?id=com.grupopbj.andala"
+    },
+    {
+      "name": "Zive Petroleum"
+    },
+    {
+      "name": "INOV Holding",
+      "logo": "inov-holding.jpg",
+      "dark": true,
+      "source": "https://www.linkedin.com/company/inov-holding/"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0c0f" />
+    <title>
+      Migrar el correo a Microsoft 365: qué preparar antes del cambio — Calembe dos Santos
+    </title>
+    <meta name="description" content="De un servidor externo a Exchange Online, o de un tenant a otro: primero, la planificación." />
+    <meta property="og:title" content="Migrar el correo a Microsoft 365: qué preparar antes del cambio" />
+    <meta property="og:description" content="De un servidor externo a Exchange Online, o de un tenant a otro: primero, la planificación." />
+    <link rel="canonical" href="https://calembe.com/es/boletins/planear-migracao-email-microsoft-365.html" />
+    <meta property="og:url" content="https://calembe.com/es/boletins/planear-migracao-email-microsoft-365.html" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="article" />
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/profile.css?v=20261024b" />
+    <link rel="stylesheet" href="/css/articles.css" />
+    <script src="/js/profile.js?v=20261024b" defer></script>
+    <!-- i18n:head -->
+    <link rel="alternate" hreflang="pt-AO" href="https://calembe.com/boletins/planear-migracao-email-microsoft-365.html" />
+    <link rel="alternate" hreflang="en-US" href="https://calembe.com/en/boletins/planear-migracao-email-microsoft-365.html" />
+    <link rel="alternate" hreflang="fr-FR" href="https://calembe.com/fr/boletins/planear-migracao-email-microsoft-365.html" />
+    <link rel="alternate" hreflang="es-ES" href="https://calembe.com/es/boletins/planear-migracao-email-microsoft-365.html" />
+    <link rel="alternate" hreflang="x-default" href="https://calembe.com/boletins/planear-migracao-email-microsoft-365.html" />
+    <!-- /i18n:head -->
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Saltar al contenido</a>
+    <header class="header">
+      <div class="nav-wrap">
+        <a class="brand" href="/es/#inicio" aria-label="Calembe dos Santos, inicio"><span class="monogram">cs<span>.</span></span><span>calembe<span class="muted"> / artículos</span></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">
+          Menú <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="navigation" aria-label="Navegación principal">
+          <a href="/es/#sobre">Sobre mí</a><a href="/es/#microsoft">Microsoft</a><a href="/es/boletins/index.html" aria-current="page">Artículos</a><a class="nav-contact" href="https://wa.me/244940203170">Hablemos ↗</a>
+        </nav>
+        <!-- i18n:languages -->
+        <details class="language-switch">
+          <summary aria-label="Elegir idioma">ES <span aria-hidden="true">⌄</span></summary>
+          <div class="language-options"><a href="/boletins/planear-migracao-email-microsoft-365.html" lang="pt-AO" hreflang="pt-AO">Português<span aria-hidden="true">PT</span></a><a href="/en/boletins/planear-migracao-email-microsoft-365.html" lang="en-US" hreflang="en-US">English<span aria-hidden="true">EN</span></a><a href="/fr/boletins/planear-migracao-email-microsoft-365.html" lang="fr-FR" hreflang="fr-FR">Français<span aria-hidden="true">FR</span></a><a href="/es/boletins/planear-migracao-email-microsoft-365.html" lang="es-ES" hreflang="es-ES" aria-current="true">Español<span aria-hidden="true">ES</span></a></div>
+        </details>
+        <!-- /i18n:languages -->
+      </div>
+    </header>
+    <main id="conteudo">
+      <div class="article-container">
+        <a class="back-link" href="/es/boletins/index.html">← Todos los artículos</a>
+        <header class="article-heading">
+          <span class="eyebrow">MIGRACIONES</span>
+          <h1>
+            Migrar el correo a Microsoft 365: qué preparar antes del cambio
+          </h1>
+          <p class="article-lead">
+            De un servidor externo a Exchange Online, o de un tenant a otro: primero, la planificación.
+          </p>
+          <div class="article-byline">
+            <span>Por Calembe dos Santos</span><span>4 min de lectura</span><span>Actualizado el
+              <time datetime="2026-09-16">16 sep. 2026</time></span>
+          </div>
+          <p class="article-origin">Nueva guía</p>
+        </header>
+        <div class="article-layout">
+          <aside class="article-toc">
+            <nav aria-label="En este artículo">
+              <span class="eyebrow">EN ESTE ARTÍCULO</span><a href="#parte-1">Define el origen y el destino</a><a href="#parte-2">Cuando el cambio es entre tenants</a><a href="#parte-3">Prepara una prueba piloto y la transición</a>
+            </nav>
+          </aside>
+          <article class="article-body">
+            <section id="parte-1">
+              <h2>Define el origen y el destino</h2>
+              <p>
+                Migrar de un servidor externo a Microsoft 365 y migrar entre dos tenants son escenarios distintos. Empieza por identificar el sistema de origen, el número de buzones, el volumen de datos, los dominios y las dependencias. El método debe elegirse a partir de ese análisis.
+              </p>
+              <p>
+                En una migración IMAP se transfieren los mensajes de las carpetas de correo; los contactos, calendarios y tareas requieren un tratamiento aparte. Los buzones de destino deben prepararse antes de la migración. No confundas la transferencia de correos con la migración completa del entorno de trabajo.
+              </p>
+            </section>
+            <section id="parte-2">
+              <h2>Cuando el cambio es entre tenants</h2>
+              <p>
+                Una migración nativa de buzones entre tenants exige configuración en ambos entornos y requisitos específicos de identidad y licencias. Microsoft documenta una licencia de migración por usuario para este escenario. Confirma los requisitos vigentes antes de cerrar el presupuesto.
+              </p>
+              <p>
+                El proyecto también debe definir cómo se tratarán el dominio, las direcciones, los permisos y las aplicaciones. OneDrive, SharePoint y Teams necesitan una planificación específica: mover un buzón no implica mover todos estos servicios.
+              </p>
+            </section>
+            <section id="parte-3">
+              <h2>Prepara una prueba piloto y la transición</h2>
+              <ol>
+                <li>
+                  <strong>Inventario:</strong> registra buzones, alias, grupos, calendarios compartidos y equipos que envían correo.
+                </li>
+                <li>
+                  <strong>Prueba piloto:</strong> prueba con un grupo representativo y documenta los fallos y los tiempos.
+                </li>
+                <li>
+                  <strong>Comunicación:</strong> explica cuándo tendrá lugar el cambio y cómo pedir ayuda.
+                </li>
+                <li>
+                  <strong>Validación:</strong> comprueba el envío, la recepción, el acceso al historial y la configuración de los clientes de correo.
+                </li>
+                <li>
+                  <strong>Continuidad:</strong> define criterios de aceptación y un plan para gestionar las incidencias.
+                </li>
+              </ol>
+              <p>
+                Evita prometer una transición sin interrupciones antes de evaluar el entorno. El objetivo es anticipar las dependencias y reducir el impacto en el equipo.
+              </p>
+            </section>
+            <section class="article-sources">
+              <h2>Fuentes y lecturas complementarias</h2>
+              <ul>
+                <li>
+                  <a href="https://learn.microsoft.com/en-us/exchange/mailbox-migration/mailbox-migration">Microsoft — métodos de migración de correo ↗</a>
+                </li>
+                <li>
+                  <a href="https://learn.microsoft.com/en-us/microsoft-365/migration/cross-tenant-mailbox-migration?view=o365-worldwide">Microsoft — migración de buzones entre tenants ↗</a>
+                </li>
+              </ul>
+              <p>Fuentes consultadas el 16 de septiembre de 2026.</p>
+            </section>
+            <div class="article-help">
+              <h2>¿Necesitas ayuda para ponerlo en práctica?</h2>
+              <p>
+                Podemos hablar de tu entorno, de tu equipo y del siguiente paso.
+              </p>
+              <a class="button primary" href="https://wa.me/244940203170">Habla con Calembe ↗</a>
+            </div>
+          </article>
+        </div>
+        <section class="related">
+          <span class="eyebrow">SIGUE EXPLORANDO</span>
+          <div class="bulletin-grid">
+            <a class="bulletin-card" href="/es/boletins/agentes-ia-copilot-studio.html"><span class="eyebrow">AUTOMATIZACIÓN E IA</span>
+              <h3>
+                Agentes de IA en el trabajo: empieza por un problema concreto
+              </h3>
+              <p>
+                Cómo preparar un primer proyecto con Copilot Studio, fuentes de conocimiento y acceso controlado.
+              </p>
+              <span class="bulletin-card-bottom"><span>3 min de lectura</span><span>Leer artículo ↗</span></span></a><a class="bulletin-card" href="/es/boletins/ficheiros-recentes-windows.html"><span class="eyebrow">PRODUCTIVIDAD</span>
+              <h3>Cómo encontrar archivos recientes en Windows</h3>
+              <p>
+                Localiza rápidamente documentos utilizados recientemente y comprende los límites de esta lista.
+              </p>
+              <span class="bulletin-card-bottom"><span>2 min de lectura</span><span>Leer artículo ↗</span></span></a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="container">
+      <a class="monogram" href="/es/#inicio" aria-label="Calembe dos Santos, inicio">cs<span>.</span></a><span>© <span id="year">2026</span> Calembe dos Santos</span><a href="/es/boletins/index.html">Todos los artículos ↗</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0c0f" />
+    <title>
+      Migrating email to Microsoft 365: what to prepare before the move — Calembe dos Santos
+    </title>
+    <meta name="description" content="From an external server to Exchange Online, or from one tenant to another: planning comes first." />
+    <meta property="og:title" content="Migrating email to Microsoft 365: what to prepare before the move" />
+    <meta property="og:description" content="From an external server to Exchange Online, or from one tenant to another: planning comes first." />
+    <link rel="canonical" href="https://calembe.com/en/boletins/planear-migracao-email-microsoft-365.html" />
+    <meta property="og:url" content="https://calembe.com/en/boletins/planear-migracao-email-microsoft-365.html" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/profile.css?v=20261024b" />
+    <link rel="stylesheet" href="/css/articles.css" />
+    <script src="/js/profile.js?v=20261024b" defer></script>
+    <!-- i18n:head -->
+    <link rel="alternate" hreflang="pt-AO" href="https://calembe.com/boletins/planear-migracao-email-microsoft-365.html" />
+    <link rel="alternate" hreflang="en-US" href="https://calembe.com/en/boletins/planear-migracao-email-microsoft-365.html" />
+    <link rel="alternate" hreflang="fr-FR" href="https://calembe.com/fr/boletins/planear-migracao-email-microsoft-365.html" />
+    <link rel="alternate" hreflang="es-ES" href="https://calembe.com/es/boletins/planear-migracao-email-microsoft-365.html" />
+    <link rel="alternate" hreflang="x-default" href="https://calembe.com/boletins/planear-migracao-email-microsoft-365.html" />
+    <!-- /i18n:head -->
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Skip to content</a>
+    <header class="header">
+      <div class="nav-wrap">
+        <a class="brand" href="/en/#inicio" aria-label="Calembe dos Santos, home"><span class="monogram">cs<span>.</span></span><span>calembe<span class="muted"> / articles</span></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="navigation" aria-label="Main navigation">
+          <a href="/en/#sobre">About</a><a href="/en/#microsoft">Microsoft</a><a href="/en/boletins/index.html" aria-current="page">Articles</a><a class="nav-contact" href="https://wa.me/244940203170">Let’s talk ↗</a>
+        </nav>
+        <!-- i18n:languages -->
+        <details class="language-switch">
+          <summary aria-label="Choose language">EN <span aria-hidden="true">⌄</span></summary>
+          <div class="language-options"><a href="/boletins/planear-migracao-email-microsoft-365.html" lang="pt-AO" hreflang="pt-AO">Português<span aria-hidden="true">PT</span></a><a href="/en/boletins/planear-migracao-email-microsoft-365.html" lang="en-US" hreflang="en-US" aria-current="true">English<span aria-hidden="true">EN</span></a><a href="/fr/boletins/planear-migracao-email-microsoft-365.html" lang="fr-FR" hreflang="fr-FR">Français<span aria-hidden="true">FR</span></a><a href="/es/boletins/planear-migracao-email-microsoft-365.html" lang="es-ES" hreflang="es-ES">Español<span aria-hidden="true">ES</span></a></div>
+        </details>
+        <!-- /i18n:languages -->
+      </div>
+    </header>
+    <main id="conteudo">
+      <div class="article-container">
+        <a class="back-link" href="/en/boletins/index.html">← All articles</a>
+        <header class="article-heading">
+          <span class="eyebrow">MIGRATIONS</span>
+          <h1>
+            Migrating email to Microsoft 365: what to prepare before the move
+          </h1>
+          <p class="article-lead">
+            From an external server to Exchange Online, or from one tenant to another: planning comes first.
+          </p>
+          <div class="article-byline">
+            <span>By Calembe dos Santos</span><span>4 min read</span><span>Updated
+              <time datetime="2026-09-16">Sep 16, 2026</time></span>
+          </div>
+          <p class="article-origin">New guide</p>
+        </header>
+        <div class="article-layout">
+          <aside class="article-toc">
+            <nav aria-label="In this article">
+              <span class="eyebrow">IN THIS ARTICLE</span><a href="#parte-1">Define the source and destination</a><a href="#parte-2">When the move is between tenants</a><a href="#parte-3">Prepare a pilot and the transition</a>
+            </nav>
+          </aside>
+          <article class="article-body">
+            <section id="parte-1">
+              <h2>Define the source and destination</h2>
+              <p>
+                Migrating from an external server to Microsoft 365 and migrating between two tenants are different scenarios. Start by identifying the source system, mailbox count, data volume, domains, and dependencies. Choose the method based on that assessment.
+              </p>
+              <p>
+                IMAP migration transfers messages from mail folders; contacts, calendars, and tasks need to be handled separately. Destination mailboxes must be prepared before migration. Moving email is not the same as migrating the entire work environment.
+              </p>
+            </section>
+            <section id="parte-2">
+              <h2>When the move is between tenants</h2>
+              <p>
+                Native cross-tenant mailbox migration requires configuration in both environments and has specific identity and licensing requirements. Microsoft documents a per-user migration license for this scenario. Confirm the current requirements before finalizing the budget.
+              </p>
+              <p>
+                The project must also address domains, addresses, permissions, and applications. OneDrive, SharePoint, and Teams need their own planning: moving a mailbox does not move all of these services.
+              </p>
+            </section>
+            <section id="parte-3">
+              <h2>Prepare a pilot and the transition</h2>
+              <ol>
+                <li>
+                  <strong>Inventory:</strong> record mailboxes, aliases, groups, shared calendars, and devices that send email.
+                </li>
+                <li>
+                  <strong>Pilot:</strong> test a representative group and document failures and timings.
+                </li>
+                <li>
+                  <strong>Communication:</strong> explain when the change will happen and how to get help.
+                </li>
+                <li>
+                  <strong>Validation:</strong> confirm sending, receiving, access to historical messages, and email client configuration.
+                </li>
+                <li>
+                  <strong>Continuity:</strong> define acceptance criteria and a plan for handling issues.
+                </li>
+              </ol>
+              <p>
+                Avoid promising a disruption-free transition before assessing the environment. The goal is to anticipate dependencies and reduce the impact on the team.
+              </p>
+            </section>
+            <section class="article-sources">
+              <h2>Sources &amp; further reading</h2>
+              <ul>
+                <li>
+                  <a href="https://learn.microsoft.com/en-us/exchange/mailbox-migration/mailbox-migration">Microsoft — email migration methods ↗</a>
+                </li>
+                <li>
+                  <a href="https://learn.microsoft.com/en-us/microsoft-365/migration/cross-tenant-mailbox-migration?view=o365-worldwide">Microsoft — cross-tenant mailbox migration ↗</a>
+                </li>
+              </ul>
+              <p>Sources accessed September 16, 2026.</p>
+            </section>
+            <div class="article-help">
+              <h2>Need help putting this into practice?</h2>
+              <p>
+                We can discuss your environment, your team, and the next step.
+              </p>
+              <a class="button primary" href="https://wa.me/244940203170">Talk to Calembe ↗</a>
+            </div>
+          </article>
+        </div>
+        <section class="related">
+          <span class="eyebrow">KEEP EXPLORING</span>
+          <div class="bulletin-grid">
+            <a class="bulletin-card" href="/en/boletins/agentes-ia-copilot-studio.html"><span class="eyebrow">AUTOMATION &amp; AI</span>
+              <h3>
+                AI agents at work: start with a specific problem
+              </h3>
+              <p>
+                How to prepare a first project with Copilot Studio, knowledge sources, and controlled access.
+              </p>
+              <span class="bulletin-card-bottom"><span>3 min read</span><span>Read article ↗</span></span></a><a class="bulletin-card" href="/en/boletins/ficheiros-recentes-windows.html"><span class="eyebrow">PRODUCTIVITY</span>
+              <h3>How to find recent files in Windows</h3>
+              <p>
+                Quickly find recently used documents and understand this list’s limitations.
+              </p>
+              <span class="bulletin-card-bottom"><span>2 min read</span><span>Read article ↗</span></span></a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="container">
+      <a class="monogram" href="/en/#inicio" aria-label="Calembe dos Santos, home">cs<span>.</span></a><span>© <span id="year">2026</span> Calembe dos Santos</span><a href="/en/boletins/index.html">All articles ↗</a>
+    </footer>
+  </body>
+</html>
