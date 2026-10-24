@@ -8,7 +8,10 @@
       "source": "https://agencia.ussole.tech/"
     },
     {
-      "name": "Lidesa"
+      "name": "Lidesa",
+      "logo": "lidesa.jpg",
+      "source": "https://www.facebook.com/lidesa.ao/",
+      "photo": "https://www.facebook.com/photo/?fbid=122097881235251384&set=a.122097873843251384"
     },
     {
       "name": "Adventure",
@@ -38,7 +41,10 @@
       "source": "https://pharollogistics.com/"
     },
     {
-      "name": "Pescangola EP"
+      "name": "Pescangola EP",
+      "logo": "pescangola.jpg",
+      "source": "https://www.facebook.com/pescangolaep/",
+      "photo": "https://www.facebook.com/photo/?fbid=424139499735380&set=a.424139463068717"
     },
     {
       "name": "GlamX Group",
@@ -51,7 +57,10 @@
       "source": "https://ao.linkedin.com/in/c%C3%A1lculo-perspicaz-4bb95715b"
     },
     {
-      "name": "YP Escritório de Advogados"
+      "name": "YP Sociedade de Advogados",
+      "logo": "yp-advogados.jpg",
+      "source": "https://www.facebook.com/profile.php?id=61567072763717",
+      "photo": "https://www.facebook.com/photo/?fbid=122190683294569092&set=a.122094602084569092"
     },
     {
       "name": "Tribunal de Contas",
