@@ -208,6 +208,7 @@ nav {
 }
 .hero-meta {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 22px;
   margin-top: 34px;
@@ -432,6 +433,39 @@ blockquote {
   justify-content: space-between;
   font-size: 10px;
   color: #a9adb5;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.featured-projects .project {
+  display: flex;
+  flex-direction: column;
+}
+.featured-projects .project-footer {
+  margin-top: auto;
+}
+.confidential-work {
+  margin-top: 24px;
+  padding: 28px;
+  border-left: 2px solid #5b6950;
+  background: #101216;
+}
+.confidential-work h3 {
+  margin: 16px 0 12px;
+}
+.confidential-work p {
+  max-width: 760px;
+  font-size: 14px;
+}
+.training-paths .certification-heading {
+  margin-top: 12px;
+}
+.training-paths .certification-grid {
+  padding-bottom: 24px;
+}
+.contact .remote-note {
+  margin: 24px 0 0;
+  font-size: 12px;
 }
 .project-footer i {
   display: inline-block;
