@@ -13,7 +13,7 @@
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:type" content="website" />
     <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/css/profile.css?v=20261024b" />
+    <link rel="stylesheet" href="/css/profile.css?v=20261024c" />
     <link rel="stylesheet" href="/css/articles.css" />
     <script src="/js/profile.js?v=20261024b" defer></script>
     <!-- i18n:head -->
@@ -120,6 +120,29 @@
         </aside>
       </section>
       <section class="client-section container" id="clientes" aria-labelledby="clients-heading">
+        <svg class="client-filters" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="client-dark-ink" color-interpolation-filters="sRGB">
+              <fecolormatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.2126 -0.7152 -0.0722 0 1" result="ink" />
+              <fecomponenttransfer in="ink" result="tone">
+                <fefunca type="gamma" amplitude="1" exponent="0.65" offset="0" />
+              </fecomponenttransfer>
+              <fecomposite in="tone" in2="SourceAlpha" operator="in" result="mask" />
+              <feflood style="flood-color: var(--accent)" />
+              <fecomposite in2="mask" operator="in" />
+            </filter>
+            <filter id="client-light-ink" color-interpolation-filters="sRGB">
+              <fecolormatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4252 1.4304 0.1444 0 -0.4" result="ink" />
+              <fecomposite in="ink" in2="SourceAlpha" operator="in" result="mask" />
+              <feflood style="flood-color: var(--accent)" />
+              <fecomposite in2="mask" operator="in" />
+            </filter>
+            <filter id="client-transparent-ink" color-interpolation-filters="sRGB">
+              <feflood style="flood-color: var(--accent)" />
+              <fecomposite in2="SourceAlpha" operator="in" />
+            </filter>
+          </defs>
+        </svg>
         <div class="client-heading">
           <div class="client-intro">
             <span class="eyebrow">MISE EN ŒUVRE &amp; FORMATION</span>
@@ -131,23 +154,23 @@
         <div class="client-marquee" id="client-marquee">
           <div class="client-track">
             <ul class="client-list" aria-label="Organisations accompagnées">
-              <li><div class="client-mark"><img src="/images/clients/imperio-ussole.webp" alt="Império Ussole" width="158" height="66" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Império Ussole</span></li>
+              <li><div class="client-mark"><img src="/images/clients/imperio-ussole.webp" alt="Império Ussole" width="128" height="40" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Império Ussole</span></li>
               <li><span class="client-text">Lidesa</span></li>
-              <li><div class="client-mark dark"><img src="/images/clients/adventure.svg" alt="Adventure" width="158" height="66" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Adventure</span></li>
-              <li><div class="client-mark dark"><img src="/images/clients/factory-ideas.png" alt="Factory Ideas" width="158" height="66" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Factory Ideas</span></li>
-              <li><div class="client-mark"><img src="/images/clients/honesus.svg" alt="Honesus" width="158" height="66" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Honesus</span></li>
-              <li><div class="client-mark"><img src="/images/clients/fairtex.png" alt="Fairtex Angola" width="158" height="66" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Fairtex Angola</span></li>
+              <li><div class="client-mark transparent-ink"><img src="/images/clients/adventure.svg" alt="Adventure" width="128" height="40" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Adventure</span></li>
+              <li><div class="client-mark transparent-ink"><img src="/images/clients/factory-ideas.png" alt="Factory Ideas" width="128" height="40" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Factory Ideas</span></li>
+              <li><div class="client-mark transparent-ink symbol"><img src="/images/clients/honesus.svg" alt="Honesus" width="128" height="40" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Honesus</span></li>
+              <li><div class="client-mark"><img src="/images/clients/fairtex.png" alt="Fairtex Angola" width="128" height="40" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Fairtex Angola</span></li>
               <li><span class="client-text">Fayol Empreendimentos</span></li>
-              <li><div class="client-mark"><img src="/images/clients/pharol-logistics.png" alt="Pharol Logistics" width="158" height="66" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Pharol Logistics</span></li>
+              <li><div class="client-mark wide"><img src="/images/clients/pharol-logistics.png" alt="Pharol Logistics" width="128" height="40" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Pharol Logistics</span></li>
               <li><span class="client-text">Pescangola EP</span></li>
-              <li><div class="client-mark"><img src="/images/clients/glamx.jpg" alt="GlamX Group" width="158" height="66" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">GlamX Group</span></li>
-              <li><div class="client-mark"><img src="/images/clients/calculo-perspicaz.jpg" alt="Cálculo Perspicaz" width="158" height="66" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Cálculo Perspicaz</span></li>
+              <li><div class="client-mark symbol"><img src="/images/clients/glamx.jpg" alt="GlamX Group" width="128" height="40" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">GlamX Group</span></li>
+              <li><div class="client-mark symbol"><img src="/images/clients/calculo-perspicaz.jpg" alt="Cálculo Perspicaz" width="128" height="40" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Cálculo Perspicaz</span></li>
               <li><span class="client-text">YP Escritório de Advogados</span></li>
-              <li><div class="client-mark dark"><img src="/images/clients/tribunal-contas.webp" alt="Tribunal de Contas" width="158" height="66" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Tribunal de Contas</span></li>
+              <li><div class="client-mark light-ink symbol"><img src="/images/clients/tribunal-contas.webp" alt="Tribunal de Contas" width="128" height="40" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Tribunal de Contas</span></li>
               <li><span class="client-text">Dinnotech</span></li>
-              <li><div class="client-mark"><img src="/images/clients/anda-la.webp" alt="Anda Lá" width="158" height="66" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Anda Lá</span></li>
+              <li><div class="client-mark symbol inset"><img src="/images/clients/anda-la.webp" alt="Anda Lá" width="128" height="40" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">Anda Lá</span></li>
               <li><span class="client-text">Zive Petroleum</span></li>
-              <li><div class="client-mark dark"><img src="/images/clients/inov-holding.jpg" alt="INOV Holding" width="158" height="66" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">INOV Holding</span></li>
+              <li><div class="client-mark light-ink symbol inset"><img src="/images/clients/inov-holding.jpg" alt="INOV Holding" width="128" height="40" loading="lazy" decoding="async" /></div><span class="client-name" aria-hidden="true">INOV Holding</span></li>
             </ul>
           </div>
         </div>
