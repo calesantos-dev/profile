@@ -610,6 +610,24 @@ blockquote {
   font-size: 13px;
   margin: 12px 0 0;
 }
+.experience-periods {
+  display: grid;
+  gap: 22px;
+  margin-top: 20px;
+}
+.experience-period {
+  padding-left: 16px;
+  border-left: 2px solid var(--line);
+}
+.experience-period h4 {
+  font-size: 14px;
+  font-weight: 550;
+  line-height: 1.4;
+  margin: 4px 0 0;
+}
+.experience-period p {
+  margin-top: 8px;
+}
 .education {
   margin-top: 48px;
   border: 1px solid var(--line);
